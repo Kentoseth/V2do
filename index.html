@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="../deps/css/jquery.mobile-1.4.5.css">
+</head>
+
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+      <div data-role="navbar">
+       <ul>
+        <li><a href="#anylink" data-icon="arrow-u">Import</a></li>
+        <li><a href="#Add" data-icon="plus" data-rel="popup">Add Task</a></li>
+        <li><a href="#anylink" data-icon="arrow-d">Export</a></li>
+     </ul>
+   </div>
+  </div>
+  
+  <div data-role="popup" id="Add">
+   <form id="todo-form">
+     <label for="AddTask">Task:</label>
+     <input type="text" name="AddTask" id="todo">
+     <input id="submit" type="submit" class="btn btn-primary" value="Add Task" />
+   </form>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <ul id="show-items" data-role="listview" data-inset="true">
+    
+    </ul>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+  <!-- Include the jQuery library -->
+  <script src="../deps/js/jquery-1.12.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="../deps/js/jquery.mobile-1.4.5.js"></script>
+  <script src="../deps/js/jquery-ui-1.11.4.min.js"></script>
+  <script src="../deps/js/jquery.inlineedit.js"></script>
+  <script src="../deps/js/pubsub.js"></script>
+  <script src="../app.js"></script>
+
+</body>
+</html>
